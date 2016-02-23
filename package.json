@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "schema": "node scripts/schema.js",
+    "fixtures": "node scripts/fixtures.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +20,12 @@
   },
   "homepage": "https://github.com/minted/frontend-interview#readme",
   "devDependencies": {
+    "sequelize-fixtures": "^0.4.8",
     "webpack": "^1.12.14"
   },
   "dependencies": {
     "express": "^4.13.4",
     "sequelize": "^3.19.3",
-    "sequelize-fixtures": "^0.4.8",
     "sqlite3": "^3.1.1"
   }
 }
