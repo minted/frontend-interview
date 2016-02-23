@@ -21,10 +21,15 @@
   },
   "homepage": "https://github.com/minted/frontend-interview#readme",
   "devDependencies": {
+    "angular": "^1.5.0",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.3",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
+    "ember-cli": "^2.3.0",
+    "jquery": "^2.2.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
     "sequelize-fixtures": "^0.4.8",
     "superagent": "^1.7.2",
     "webpack": "^1.12.14"
