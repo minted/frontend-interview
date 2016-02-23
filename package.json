@@ -4,6 +4,7 @@
   "description": "A repository of code that can be used in frontend technical interviews.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/minted/frontend-interview/issues"
   },
-  "homepage": "https://github.com/minted/frontend-interview#readme"
+  "homepage": "https://github.com/minted/frontend-interview#readme",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
