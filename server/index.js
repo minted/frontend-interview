@@ -12,7 +12,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/items', function(req, res) {
-  res.send('list of things');
+  Item.findAll()
+    .then(function(items) {
+      res.set('Content-Type', 'application/json');
+      res.send(items);
+    });
 });
 
 app.listen(port, function() {
