@@ -7,6 +7,10 @@ var Item = require('./models').Item;
 
 var port = process.env.PORT || 3000;
 
+app.get('/', function(req, res) {
+  res.redirect('/playground/');
+});
+
 app.get('/api/items', function(req, res) {
   Item.findAll()
     .then(function(items) {
