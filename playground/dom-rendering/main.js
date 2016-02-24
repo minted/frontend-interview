@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('superagent');
-var markdown = require('markdown').markdown;
+var marked = require('marked');
 
 /* Convenience imports  */
 
