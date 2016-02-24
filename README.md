@@ -73,6 +73,8 @@ $ npm run build
     $ npm run build
     ```
 
+6. At the top of the IDE, click Preview => Port 3000 to open the running Node app in another tab.
+
 ### For the candidate
 
 1. Find the project in your [shared projects](https://www.nitrous.io/app/#/dashboard/shared-projects) on Nitrous.
@@ -81,3 +83,5 @@ $ npm run build
     ```bash
     $ tmux att -t0
     ```
+
+3. At the top of the IDE, click Preview => Port 3000 to open the running Node app in another tab.
