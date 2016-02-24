@@ -13,7 +13,7 @@ Navigate to [http://localhost:3000/playground/](http://localhost:3000/playground
 
 ## Developing
 
-To build javascript (and) watch, start webpack with:
+To build javascript (and watch), start webpack with:
 
 ```bash
 $ npm run build
@@ -61,7 +61,7 @@ $ npm run build
     ```
 
 3. Vertically split the tmux session into two panes: `CTRL+b %`
-4. Switch to the right pane and start the node app: `CTRL+b <right>`
+4. In the right pane and start the node app.
 
     ```bash
     $ npm start
