@@ -4,7 +4,8 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    'dom-rendering': './playground/dom-rendering/main'
+    'dom-rendering': './playground/dom-rendering/main',
+    'interactive-ui-vote': './playground/interactive-ui/vote'
   },
   output: {
     path: path.join(__dirname, 'dist'),
