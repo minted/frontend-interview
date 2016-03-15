@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Interactive UI - Image Dragging</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+        <style>
+            body {margin: 40px 0;}
+            p {margin: 0;}
+            #scene {width: 100%; height: 500px; background-image: url(nyan-cat-bg.png);}
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Interactive UI - Image Dragging</h1>
+
+            <div class="alert alert-block alert-info">
+                <p>
+                    Implement functionality to allow the user to drag the image below within its containing element.
+                    resources are below.
+                </p>
+            </div>
+
+            <div>
+                <h3>Helpful resources and tips</h3>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX">MDN documentation on mouse events</a></li>
+                    <li><a href="https://lodash.com/docs#throttle">Lodash's throttle documentation</a></li>
+                    <li><code>parseFloat()</code> can be used to get a Number value from a string such as "50px"</li>
+                </ul>
+            </div>
+
+            <div id="scene" style="position: relative;">
+                <img src="nyan-cat.png" style="height: 100px; position: absolute; top: 200px; left: 300px;">
+            </div>
+        </div>
+
+        <script src="/dist/interactive-ui-image-dragging.js"></script>
+    </body>
+</html>
