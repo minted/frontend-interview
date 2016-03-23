@@ -24,8 +24,9 @@ $ npm run build
 ### For the interviewer
 
 1. [Connect your Nitrous account to GitHub](https://www.nitrous.io/app/#/dashboard/account) if you haven't already.
-2. [**Click here**](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous and name it "[Candidate Name] Frontend".
-3. Add the candidate and any other interviewers as collaborators on the project.
+2. [**Click here**](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous.
+3. Brew some tea or go for a walk while our slew of convenience npm packages install.
+4. Once the Nitrous IDE loads, use the _Collaborate_ menu item to invite the candidate and any other interviewers to be collaborators on the project.
 
 ### For the candidate
 
@@ -41,7 +42,7 @@ $ npm run build
 2. In the console at the bottom of the IDE, start a new tmux session in the frontend-interview project.
 
     ```bash
-    $ cd frontend-interview
+    $ cd ~/code/frontend-interview
     $ tmux
     ```
 
