@@ -23,24 +23,9 @@ $ npm run build
 
 ### For the interviewer
 
-1. Create a new Node.js project on Nitrous named "[Candidate Name] Frontend".
-2. Configure port 3000 as the primary port.
-3. Open the IDE, and in the terminal, clone this repo.
-
-    ```bash
-    $ git clone https://github.com/minted/frontend-interview.git
-    ```
-
-4. Install npm dependencies, set up database, and load fixtures.
-
-    ```bash
-    $ cd frontend-interview
-    $ npm install
-    $ npm run schema
-    $ npm run fixtures
-    ```
-        
-5. Add the candidate and any other interviewers as collaborators on the project.
+1. [Connect your Nitrous account to GitHub](https://www.nitrous.io/app/#/dashboard/account) if you haven't already.
+2. [Click here](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous and name it "[Candidate Name] Frontend".
+3. Add the candidate and any other interviewers as collaborators on the project.
 
 ### For the candidate
 
