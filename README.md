@@ -24,7 +24,7 @@ $ npm run build
 ### For the interviewer
 
 1. [Connect your Nitrous account to GitHub](https://www.nitrous.io/app/#/dashboard/account) if you haven't already.
-2. [Click here](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous and name it "[Candidate Name] Frontend".
+2. [**Click here**](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous and name it "[Candidate Name] Frontend".
 3. Add the candidate and any other interviewers as collaborators on the project.
 
 ### For the candidate
