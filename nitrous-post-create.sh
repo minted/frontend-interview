@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $HOME/frontend-interview
+cd $HOME/code/frontend-interview
 npm install
 npm run schema
 npm run fixtures
