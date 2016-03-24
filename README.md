@@ -4,7 +4,9 @@ Minted [is hiring](http://www.minted.com/jobs)!
 
 This repo includes live application code that can be used in technical interviews. It aims to grow to include coding playgrounds that are true to real-world web application challenges.
 
-#### Powered by&nbsp;&nbsp;<img src="http://i.imgur.com/4Xie4sj.png" alt="Nitrous" width="250">
+#### Powered by
+
+<img src="http://i.imgur.com/4Xie4sj.png" alt="Nitrous" width="250">
 
 ## Getting started
 
