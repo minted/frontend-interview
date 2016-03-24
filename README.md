@@ -1,3 +1,13 @@
+## Overview
+
+Minted [is hiring](http://www.minted.com/jobs)!
+
+This repo includes live application code that can be used in technical interviews. It aims to grow to include coding playgrounds that are true to real-world web application challenges.
+
+Powered by Nitrous.
+
+[![Nitrous](http://i.imgur.com/jZMTeAG.png)]
+
 ## Getting started
 
 Install node dependencies, create database, import fixture data,  and start the express app:
@@ -24,7 +34,10 @@ $ npm run build
 ### For the interviewer
 
 1. [Connect your Nitrous account to GitHub](https://www.nitrous.io/app/#/dashboard/account) if you haven't already.
-2. [**Click here**](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git) to create a new project on Nitrous.
+2. Click the button below to create a new project on Nitrous.
+
+    [![Nitrous Quickstart](https://nitrous-image-icons.s3.amazonaws.com/quickstart.svg)](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git)
+    
 3. Brew some tea or go for a walk while our slew of convenience npm packages install.
 4. Once the Nitrous IDE loads, use the _Collaborate_ menu item to invite the candidate and any other interviewers to be collaborators on the project.
 
