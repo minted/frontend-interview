@@ -6,7 +6,7 @@ This repo includes live application code that can be used in technical interview
 
 #### Powered by
 
-<img src="http://i.imgur.com/4Xie4sj.png" alt="Nitrous" width="250">
+<a href="https://www.nitrous.io/"><img src="http://i.imgur.com/4Xie4sj.png" alt="Nitrous" width="250"></a>
 
 ## Getting started
 
