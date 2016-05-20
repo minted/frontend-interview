@@ -22,6 +22,6 @@ app.get('/api/items', function(req, res) {
 app.use('/dist', express.static('dist'));
 app.use('/playground', express.static('playground'));
 
-app.listen(port, function() {
+app.listen(port, '0.0.0.0', function() {
   console.log('App listening on port', port);
 });

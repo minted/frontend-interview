@@ -22,6 +22,7 @@
   "homepage": "https://github.com/minted/frontend-interview#readme",
   "devDependencies": {
     "angular": "^1.5.0",
+    "angular-sanitize": "^1.5.5",
     "angular-ui-router": "^0.2.18",
     "async": "^1.5.2",
     "babel-core": "^6.5.2",
