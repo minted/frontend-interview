@@ -1,86 +1,44 @@
-## Overview
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Minted [is hiring](http://www.minted.com/jobs)!
+## Available Scripts
 
-This repo includes live application code that can be used in technical interviews. It aims to grow to include coding playgrounds that are true to real-world web application challenges.
+In the project directory, you can run:
 
-#### Powered by
+### `npm start`
 
-<a href="https://www.nitrous.io/"><img src="http://i.imgur.com/4Xie4sj.png" alt="Nitrous" width="250"></a>
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Getting started
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Install node dependencies, create database, import fixture data,  and start the express app:
+### `npm test`
 
-```bash
-$ npm install
-$ npm run schema
-$ npm run fixtures
-$ npm start
-```
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Navigate to [http://localhost:3000/playground/](http://localhost:3000/playground/) to try out the different coding samples.
+### `npm run build`
 
-## Developing
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-To build javascript (and watch), start webpack with:
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-```bash
-$ npm run build
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Pre-interview setup
+### `npm run eject`
 
-### For the interviewer
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. [Connect your Nitrous account to GitHub](https://www.nitrous.io/app/#/dashboard/account) if you haven't already.
-2. Click the button below to create a new project on Nitrous.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-    [![Nitrous Quickstart](https://nitrous-image-icons.s3.amazonaws.com/quickstart.svg)](https://www.nitrous.io/quickstart?repo=git@github.com:minted/frontend-interview.git)
-    
-3. Brew some tea or go for a walk while our slew of convenience npm packages install.
-4. Once the Nitrous IDE loads, use the _Collaborate_ menu item to invite the candidate and any other interviewers to be collaborators on the project.
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### For the candidate
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-1. Watch for an email from Nitrous inviting you to collaborate on a shared project.
-2. Follow the link to your [shared projects](https://www.nitrous.io/app/#/dashboard/shared-projects) (create an account if necessary).
-3. Make sure the project appears in your shared projects list. Feel free to start it up, open the IDE, and tinker around a bit. This won't be necessary for your interview, but it could put you at ease getting around if you aren't already a little familiar with Nitrous.
+## Learn More
 
-## Day-of interview setup
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### For the interviewer
-
-1. Start up the Nitrous project for this candidate and open the IDE.
-2. In the console at the bottom of the IDE, start a new tmux session in the frontend-interview project.
-
-    ```bash
-    $ cd ~/code/frontend-interview
-    $ tmux
-    ```
-
-3. Vertically split the tmux session into two panes: `CTRL+b %`
-4. In the right pane and start the node app.
-
-    ```bash
-    $ npm start
-    ```
-
-5. Switch to the left pane and start the webpack watch process: `CTRL+b <left>`
-
-    ```bash
-    $ npm run build
-    ```
-
-6. At the top of the IDE, click Preview => Port 3000 to open the running Node app in another tab.
-
-### For the candidate
-
-1. Find the project in your [shared projects](https://www.nitrous.io/app/#/dashboard/shared-projects) on Nitrous.
-2. Open the IDE and join the tmux session with the webpack watch process and the node server in your bottom console.
-
-    ```bash
-    $ tmux att -t0
-    ```
-
-3. At the top of the IDE, click Preview => Port 3000 to open the running Node app in another tab.
+To learn React, check out the [React documentation](https://reactjs.org/).
