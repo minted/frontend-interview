@@ -48,30 +48,43 @@ it('understands fruit characteristics', () => {
   expect(report).toEqual(['apple', 'lime']);
 });
 
-it('fully handles fruit objects with characteristics', () => {
+it('gets fruit names for fruits with characteristics', () => {
   const widget = new FruitBasket([
     { name: 'apple', isCitrus: true },
     { name: 'banana', isCitrus: false },
   ]);
-
-  let fruits = widget.getFruits();
+  const fruits = widget.getFruits();
   expect(fruits).toEqual(['apple', 'banana']);
+});
 
-  const fruitCount = widget.getFruitCount();
-  expect(fruitCount).toEqual(2);
-
+it('adds a fruit with characteristics', () => {
+  const widget = new FruitBasket([
+    { name: 'apple', isCitrus: true },
+    { name: 'banana', isCitrus: false },
+  ]);
   widget.addFruit({ name: 'lime', isCitrus: true });
-  fruits = widget.getFruits();
+  const fruits = widget.getFruits();
   expect(fruits).toEqual(['apple', 'banana', 'lime']);
+});
 
+it('checks for fruits with characteristics', () => {
+  const widget = new FruitBasket([
+    { name: 'apple', isCitrus: true },
+    { name: 'banana', isCitrus: false },
+  ]);
   expect(widget.hasFruit('banana')).toBe(true);
   expect(widget.hasFruit('orange')).toBe(false);
+});
 
+it('reports the number of each fruit with characteristics', () => {
+  const widget = new FruitBasket([
+    { name: 'apple', isCitrus: true },
+    { name: 'banana', isCitrus: false },
+  ]);
   widget.addFruit({ name: 'banana', isCitrus: false });
   const report = widget.getFruitReport();
   expect(report).toEqual({
     'apple': 1,
     'banana': 2,
-    'lime': 1,
   });
 });
