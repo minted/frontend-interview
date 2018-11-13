@@ -10,7 +10,7 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "concurrently 'react-scripts start' 'majestic'",
+    "start": "concurrently 'react-scripts start' './src/majestic'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
