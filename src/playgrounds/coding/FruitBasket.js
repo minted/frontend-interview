@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// TODO make each test in FruitBasket.test.js pass
+
 class FruitBasket extends Component {
   constructor(props) {
     super(props);
@@ -14,22 +16,21 @@ class FruitBasket extends Component {
   render() {
     return (
       <div>
+        {/* TODO 1. nothing to do here :) */}
         <h1>Fruit Basket</h1>
         <div>
           <a href="/" onClick={e => e.target.port = 3005}>Open test runner &raquo;</a>
         </div>
         <ul>
-          {/* TODO make this render the list of fruits */}
+          {/* TODO 2. make this render the list of fruits */}
+          {/* TODO 5. make special fruits from props bold */}
           <li> ...fruit here... </li>
         </ul>
 
-        {/* TODO take fruit name from text input
-          <input /> <button>Add fruit</button>
-        */}
-
-        {/* TODO make these buttons add their respective fruits */}
+        {/* TODO 3. make this add a lime on button click */}
+        {/* TODO 4. make this add fruit from input on button click (default text to "lime" to pass previous test) */}
+        {/* <input /> */}
         <button>Add lime</button>
-        <button>Add orange</button>
       </div>
     );
   }
