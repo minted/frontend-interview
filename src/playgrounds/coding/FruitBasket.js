@@ -19,7 +19,7 @@ class FruitBasket extends Component {
         {/* TODO 1. nothing to do here :) */}
         <h1>Fruit Basket</h1>
         <div>
-          <a href="/" onClick={e => e.target.port = 3005}>Open test runner &raquo;</a>
+          <a href={window.location.protocol + '//' + window.location.hostname + ':3005'}>Open test runner &raquo;</a>
         </div>
         <ul>
           {/* TODO 2. make this render the list of fruits */}
