@@ -12,7 +12,7 @@ class App extends Component {
       <Router>
         <div className="container">
           <Route path="/" exact component={Home} />
-          <Route path="/coding" exact component={FruitBasket} />
+          <Route path="/coding" exact component={() => <FruitBasket specialFruits={['banana', 'orange']} />} />
         </div>
       </Router>
     );
