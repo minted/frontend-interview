@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "concurrently": "^4.0.1",
-    "majestic": "^1.1.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-router-dom": "^4.3.1",
@@ -26,8 +24,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "jest-enzyme": "^7.0.1"
+    "jest-enzyme": "^7.0.1",
+    "majestic": "^1.1.0"
   }
 }
