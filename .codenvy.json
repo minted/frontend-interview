@@ -1,0 +1,72 @@
+{
+  "v": "4.0",
+  "workspace": {
+    "name": "minted-interview",
+    "environments": {
+      "default": {
+        "machines": {
+          "dev-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {
+              "app": {
+                "port": "3000",
+                "properties": {},
+                "protocol": "http"
+              },
+              "majestic": {
+                "port": "3005",
+                "properties": {},
+                "protocol": "http"
+              }
+            },
+            "agents": [
+              "org.eclipse.che.ssh",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.exec"
+            ]
+          }
+        },
+        "recipe": {
+          "location": "eclipse/node",
+          "type": "dockerimage"
+        }
+      }
+    },
+    "defaultEnv": "default",
+    "projects": [
+      {
+        "links": [],
+        "name": "interview-playground",
+        "attributes": {
+          "contribute_to_branch": [
+            "master"
+          ]
+        },
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/minted/interview-playground.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/interview-playground",
+        "description": "",
+        "problems": [],
+        "mixins": [
+          "pullrequest"
+        ]
+      }
+    ],
+    "commands": {
+      "commandLine": "yarn start",
+      "name": "Start",
+      "type": "custom",
+      "attributes": {
+        "previewUrl": "http://${server.port.3000}/"
+      }
+    },
+    "links": []
+  }
+}
