@@ -4,10 +4,16 @@
     "name": "minted-interview",
     "environments": [
       {
-        "machines": {
-          "dev-machine": {
-            "attributes": {
-              "memoryLimitBytes": "2147483648"
+        "machineConfigs": [
+          {
+            "name": "interview",
+            "limits": {
+              "ram": 2048
+            },
+            "type": "docker",
+            "source": {
+              "type": "image",
+              "location": "eclipse/node"
             },
             "servers": {
               "app": {
@@ -20,19 +26,9 @@
                 "properties": {},
                 "protocol": "http"
               }
-            },
-            "agents": [
-              "org.eclipse.che.ssh",
-              "org.eclipse.che.ws-agent",
-              "org.eclipse.che.terminal",
-              "org.eclipse.che.exec"
-            ]
+            }
           }
-        },
-        "recipe": {
-          "location": "eclipse/node",
-          "type": "dockerimage"
-        }
+        ]
       }
     ],
     "defaultEnv": "default",
