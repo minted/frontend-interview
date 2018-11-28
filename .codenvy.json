@@ -3,34 +3,39 @@
   "name":"minted-interview",
   "workspace":{
     "defaultEnv":"minted-interview",
-    "environments":[
-      {
-        "name":"minted-interview",
-        "machineConfigs":[
-          {
-            "limits":{
-              "ram":2000
+    "environments": {
+      "default": {
+        "machines": {
+          "dev-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
             },
-            "name":"ws-machine",
-            "type":"docker",
-            "source":{
-              "content":"FROM codenvy/debian_jdk8\nEXPOSE 9966",
-              "type":"dockerfile"
+            "servers": {
+              "app": {
+                "port": "3000",
+                "properties": {},
+                "protocol": "http"
+              },
+              "majestic": {
+                "port": "3005",
+                "properties": {},
+                "protocol": "http"
+              }
             },
-            "dev":true,
-            "servers":[
-
-            ],
-            "envVariables":{
-
-            },
-            "links":[
-
+            "agents": [
+              "org.eclipse.che.ssh",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.exec"
             ]
           }
-        ]
+        },
+        "recipe": {
+          "location": "eclipse/node",
+          "type": "dockerimage"
+        }
       }
-    ],
+    },
     "projects":[
       {
         "links":[
