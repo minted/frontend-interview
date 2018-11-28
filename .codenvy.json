@@ -1,11 +1,11 @@
 {
   "v":"4.0",
-  "name":"minted-interview",
+  "name":"spring-petclinic",
   "workspace":{
-    "defaultEnv":"minted-interview",
+    "defaultEnv":"spring-petclinic",
     "environments":[
       {
-        "name":"minted-interview",
+        "name":"spring-petclinic",
         "machineConfigs":[
           {
             "limits":{
