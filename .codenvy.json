@@ -1,9 +1,10 @@
 {
-  "v": "4.0",
-  "workspace": {
-    "name": "minted-interview",
-    "environments": [
-      {
+  "v":"4.0",
+  "name":"minted-interview",
+  "workspace":{
+    "defaultEnv":"minted-interview",
+    "environments": {
+      "default": {
         "machines": {
           "dev-machine": {
             "attributes": {
@@ -34,47 +35,54 @@
           "type": "dockerimage"
         }
       }
-    ],
-    "defaultEnv": "default",
-    "projects": [
+    },
+    "projects":[
       {
-        "links": [],
-        "name": "interview-playground",
-        "attributes": {
-          "contribute_to_branch": [
+        "links":[
+
+        ],
+        "name":"interview-playground",
+        "attributes":{
+          "contribute_to_branch":[
             "master"
           ]
         },
-        "type": "blank",
+        "type":"blank",
         "source": {
           "location": "https://github.com/minted/interview-playground.git",
           "type": "git",
           "parameters": {}
         },
-        "path": "/interview-playground",
-        "description": "",
-        "problems": [],
-        "mixins": [
-          "pullrequest"
+        "path":"/interview-playground",
+        "description":"A minted interview playground.",
+        "problems":[
+
+        ],
+        "mixins":[
+          "pullrequest",
+          "git"
         ]
       }
     ],
-    "commands": [
+    "name":"minted-interview",
+    "commands":[
       {
         "commandLine":"yarn install",
         "name":"install",
         "type":"custom"
       },
       {
-        "commandLine": "yarn start",
-        "name": "Start",
-        "type": "custom",
-        "attributes": {
-          "previewUrl": "http://${server.port.3000}/"
-        }
+        "commandLine":"yarn start",
+        "name":"start",
+        "attributes":{
+          "previewUrl":"http://${server.port.3000}"
+        },
+        "type":"custom"
       }
     ],
-    "links": []
+    "links":[
+
+    ]
   },
   "ide":{
     "onProjectsLoaded":{
