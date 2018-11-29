@@ -14,8 +14,8 @@
             "name":"ws-machine",
             "type":"docker",
             "source":{
-              "content":"FROM eclipse/node\nEXPOSE 3000 3005",
-              "type":"dockerfile"
+              "location":"eclipse/node",
+              "type":"image"
             },
             "dev":true,
             "servers":[
