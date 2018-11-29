@@ -14,7 +14,7 @@
             "name":"ws-machine",
             "type":"docker",
             "source":{
-              "content":"FROM codenvy/debian_jdk8\nEXPOSE 9966",
+              "content":"FROM eclipse/node\nEXPOSE 3000 3005",
               "type":"dockerfile"
             },
             "dev":true,
