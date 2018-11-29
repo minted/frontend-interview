@@ -45,12 +45,7 @@
     }],
     "name": "minted-interview",
     "commands": [{
-        "commandLine": "cd ${current.project.path} && yarn install",
-        "name": "install",
-        "type": "custom"
-      },
-      {
-        "commandLine": "cd ${current.project.path} &&yarn start",
+        "commandLine": "cd ${current.project.path} && yarn install && yarn start",
         "name": "start",
         "attributes": {
           "previewUrl": "http://${server.port.3000}"
@@ -63,12 +58,6 @@
   "ide": {
     "onProjectsLoaded": {
       "actions": [{
-          "properties": {
-            "name": "install"
-          },
-          "id": "runCommand"
-        },
-        {
           "properties": {
             "name": "start"
           },
