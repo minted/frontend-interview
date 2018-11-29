@@ -16,7 +16,19 @@
           "type": "image"
         },
         "dev": true,
-        "servers": [],
+        "servers": [{
+            "name": "app",
+            "port": "3000",
+            "properties": {},
+            "protocol": "http"
+          },
+          {
+            "name": "majestic",
+            "port": "3005",
+            "properties": {},
+            "protocol": "http"
+          }
+        ],
         "envVariables": {},
         "links": []
       }]
