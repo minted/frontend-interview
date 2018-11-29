@@ -1,98 +1,78 @@
 {
-  "v":"4.0",
-  "name":"spring-petclinic",
-  "workspace":{
-    "defaultEnv":"spring-petclinic",
-    "environments":[
-      {
-        "name":"spring-petclinic",
-        "machineConfigs":[
-          {
-            "limits":{
-              "ram":2000
-            },
-            "name":"ws-machine",
-            "type":"docker",
-            "source":{
-              "location":"eclipse/node",
-              "type":"image"
-            },
-            "dev":true,
-            "servers":[
-
-            ],
-            "envVariables":{
-
-            },
-            "links":[
-
-            ]
-          }
-        ]
-      }
-    ],
-    "projects":[
-      {
-        "links":[
-
-        ],
-        "name":"interview-playground",
-        "attributes":{
-          "contribute_to_branch":[
-            "master"
-          ]
+  "v": "4.0",
+  "name": "minted-interview",
+  "workspace": {
+    "defaultEnv": "minted-interview",
+    "environments": [{
+      "name": "minted-interview",
+      "machineConfigs": [{
+        "limits": {
+          "ram": 2000
         },
-        "type":"blank",
+        "name": "ws-machine",
+        "type": "docker",
         "source": {
-          "location": "https://github.com/minted/interview-playground.git",
-          "type": "git",
-          "parameters": {}
+          "location": "eclipse/node",
+          "type": "image"
         },
-        "path":"/interview-playground",
-        "description":"A minted interview playground.",
-        "problems":[
-
-        ],
-        "mixins":[
-          "pullrequest",
-          "git"
+        "dev": true,
+        "servers": [],
+        "envVariables": {},
+        "links": []
+      }]
+    }],
+    "projects": [{
+      "links": [],
+      "name": "interview-playground",
+      "attributes": {
+        "contribute_to_branch": [
+          "master"
         ]
-      }
-    ],
-    "name":"minted-interview",
-    "commands":[
-      {
-        "commandLine":"cd ${current.project.path} && yarn install",
-        "name":"install",
-        "type":"custom"
+      },
+      "type": "blank",
+      "source": {
+        "location": "https://github.com/minted/interview-playground.git",
+        "type": "git",
+        "parameters": {}
+      },
+      "path": "/interview-playground",
+      "description": "A minted interview playground.",
+      "problems": [],
+      "mixins": [
+        "pullrequest",
+        "git"
+      ]
+    }],
+    "name": "minted-interview",
+    "commands": [{
+        "commandLine": "cd ${current.project.path} && yarn install",
+        "name": "install",
+        "type": "custom"
       },
       {
-        "commandLine":"cd ${current.project.path} &&yarn start",
-        "name":"start",
-        "attributes":{
-          "previewUrl":"http://${server.port.3000}"
+        "commandLine": "cd ${current.project.path} &&yarn start",
+        "name": "start",
+        "attributes": {
+          "previewUrl": "http://${server.port.3000}"
         },
-        "type":"custom"
+        "type": "custom"
       }
     ],
-    "links":[
-
-    ]
+    "links": []
   },
-  "ide":{
-    "onProjectsLoaded":{
-      "actions":[
-        {
-          "properties":{
-            "name":"install"
+  "ide": {
+    "onProjectsLoaded": {
+      "actions": [{
+          "properties": {
+            "name": "install"
           },
-          "id":"runCommand"
+          "id": "runCommand"
         },
         {
-          "properties":{
-            "name":"start"
+          "properties": {
+            "name": "start"
           },
-          "id":"runCommand"
+          "id": "runCommand"
         }
       ]
     }
