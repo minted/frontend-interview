@@ -62,12 +62,12 @@
     "name":"minted-interview",
     "commands":[
       {
-        "commandLine":"yarn install",
+        "commandLine":"cd ${current.project.path} && yarn install",
         "name":"install",
         "type":"custom"
       },
       {
-        "commandLine":"yarn start",
+        "commandLine":"cd ${current.project.path} &&yarn start",
         "name":"start",
         "attributes":{
           "previewUrl":"http://${server.port.3000}"
