@@ -48,7 +48,7 @@
           "type": "git",
           "parameters": {}
         },
-        "path":"/interview-playground",
+        "path":"/",
         "description":"A minted interview playground.",
         "problems":[
 
