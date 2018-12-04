@@ -45,7 +45,7 @@
             "master"
           ],
           "commands": [
-            "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"newCustom\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
+            "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"start\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
           ]
         },
         "type": "blank",
