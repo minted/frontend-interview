@@ -78,7 +78,7 @@
       "actions": [{
           "properties": {
           "greetingTitle": "Welcome!",
-          "greetingContentUrl": "http://minted.github.io/interview-playground/welcome.html"
+          "greetingContentUrl": "http://minted.github.io/interview-playground/welcome"
         },
         "id": "openWelcomePage"
       }]
