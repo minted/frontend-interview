@@ -5,7 +5,7 @@
     "environments": {
       "minted-interview": {
         "machines": {
-          "ws-machine": {
+          "playground": {
             "attributes": {
               "memoryLimitBytes": "2147483648"
             },
