@@ -1,50 +1,67 @@
 {
   "v": "4.0",
-  "name": "minted-interview",
+  "name": "interview",
   "workspace": {
-    "defaultEnv": "minted-interview",
-    "environments": [{
-      "name": "minted-interview",
-      "machineConfigs": [{
-        "limits": {
-          "ram": 2000
+    "environments": {
+      "minted-interview": {
+        "machines": {
+          "ws-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {
+              "app": {
+                "port": "3000",
+                "properties": {},
+                "protocol": "http"
+              },
+              "majestic": {
+                "port": "3005",
+                "properties": {},
+                "protocol": "http"
+              }
+            },
+            "agents": [
+              "org.eclipse.che.exec",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.ssh"
+            ]
+          }
         },
-        "name": "ws-machine",
-        "type": "docker",
-        "source": {
+        "recipe": {
           "location": "eclipse/node",
-          "type": "image"
+          "type": "dockerimage"
+        }
+      }
+    },
+    "defaultEnv": "minted-interview",
+    "projects": [
+      {
+        "links": [],
+        "name": "interview-playground",
+        "attributes": {
+          "contribute_to_branch": [
+            "master"
+          ]
         },
-        "dev": true,
-        "servers": [],
-        "envVariables": {},
-        "links": []
-      }]
-    }],
-    "projects": [{
-      "links": [],
-      "name": "interview-playground",
-      "attributes": {
-        "contribute_to_branch": [
-          "master"
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/minted/interview-playground.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/interview-playground",
+        "description": "A minted interview playground.",
+        "problems": [],
+        "mixins": [
+          "pullrequest"
         ]
-      },
-      "type": "blank",
-      "source": {
-        "location": "https://github.com/minted/interview-playground.git",
-        "type": "git",
-        "parameters": {}
-      },
-      "path": "/interview-playground",
-      "description": "A minted interview playground.",
-      "problems": [],
-      "mixins": [
-        "pullrequest",
-        "git"
-      ]
-    }],
+      }
+    ],
     "name": "minted-interview",
-    "commands": [{
+    "commands": [
+      {
         "commandLine": "cd ${current.project.path} && yarn install && yarn start",
         "name": "start",
         "attributes": {
@@ -55,15 +72,10 @@
     ],
     "links": []
   },
-  "ide": {
-    "onProjectsLoaded": {
-      "actions": [{
-          "properties": {
-            "name": "start"
-          },
-          "id": "runCommand"
-        }
-      ]
-    }
+  "creator": {
+    "name": "alanct-minted",
+    "email": "alan.thomas@minted.com",
+    "created": 1543949102416,
+    "userId": "userrf2ysj1dk98g3tha"
   }
 }
