@@ -43,6 +43,9 @@
         "attributes": {
           "contribute_to_branch": [
             "master"
+          ],
+          "commands": [
+            "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"newCustom\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
           ]
         },
         "type": "blank",
@@ -60,16 +63,7 @@
       }
     ],
     "name": "minted-interview",
-    "commands": [
-      {
-        "commandLine": "cd ${current.project.path} && yarn install && yarn start",
-        "name": "start",
-        "attributes": {
-          "previewUrl": "http://${server.port.3000}"
-        },
-        "type": "custom"
-      }
-    ],
+    "commands": [],
     "links": []
   },
   "creator": {
