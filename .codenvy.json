@@ -31,32 +31,30 @@
       }
     },
     "defaultEnv": "minted-interview",
-    "projects": [
-      {
-        "links": [],
-        "name": "interview-playground",
-        "attributes": {
-          "contribute_to_branch": [
-            "master"
-          ],
-          "commands": [
-            "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"start\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
-          ]
-        },
-        "type": "blank",
-        "source": {
-          "location": "https://github.com/minted/interview-playground.git",
-          "type": "git",
-          "parameters": {}
-        },
-        "path": "/interview-playground",
-        "description": "A minted interview playground.",
-        "problems": [],
-        "mixins": [
-          "pullrequest"
+    "projects": [{
+      "links": [],
+      "name": "interview-playground",
+      "attributes": {
+        "contribute_to_branch": [
+          "master"
+        ],
+        "commands": [
+          "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"start\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
         ]
-      }
-    ],
+      },
+      "type": "blank",
+      "source": {
+        "location": "https://github.com/minted/interview-playground.git",
+        "type": "git",
+        "parameters": {}
+      },
+      "path": "/interview-playground",
+      "description": "A minted interview playground.",
+      "problems": [],
+      "mixins": [
+        "pullrequest"
+      ]
+    }],
     "name": "minted-interview",
     "commands": [],
     "links": []
@@ -69,14 +67,21 @@
   },
   "ide": {
     "onProjectsLoaded": {
-      "actions": [
-        {
+      "actions": [{
+        "properties": {
+          "name": "start"
+        },
+        "id": "runCommand"
+      }]
+    },
+    "onAppLoaded": {
+      "actions": [{
           "properties": {
-            "name": "start"
-          },
-          "id": "runCommand"
-        }
-      ]
+          "greetingTitle": "Welcome!",
+          "greetingContentUrl": "http://minted.github.io/interview-playground/welcome.html"
+        },
+        "id": "openWelcomePage"
+      }]
     }
   }
 }
