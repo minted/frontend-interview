@@ -17,6 +17,9 @@ const Home = () => (
       <li>
         <strong>Modeling:</strong> <a href="/">???</a>
       </li>
+      <li>
+        <strong>Styling:</strong> <a href="/">???</a>
+      </li>
     </ul>
   </div>
 );
