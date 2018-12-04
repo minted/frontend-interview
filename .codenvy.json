@@ -71,5 +71,17 @@
     "email": "alan.thomas@minted.com",
     "created": 1543949102416,
     "userId": "userrf2ysj1dk98g3tha"
+  },
+  "ide": {
+    "onProjectsLoaded": {
+      "actions": [
+        {
+          "properties": {
+            "name": "start"
+          },
+          "id": "runCommand"
+        }
+      ]
+    }
   }
 }
