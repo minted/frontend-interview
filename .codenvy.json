@@ -51,9 +51,7 @@
       "path": "/interview-playground",
       "description": "A minted interview playground.",
       "problems": [],
-      "mixins": [
-        "pullrequest"
-      ]
+      "mixins": []
     }],
     "name": "minted-interview",
     "commands": [],
