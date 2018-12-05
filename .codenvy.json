@@ -44,8 +44,8 @@
           "master"
         ],
         "commands": [
-          "{\"commandLine\":\"cd ${current.project.path} && yarn --cache-folder=\".app-yarn-cache\" install && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
-          "{\"commandLine\":\"cd ${current.project.path} && yarn --cache-folder=\".tests-yarn-cache\" install && yarn run majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
+          "{\"commandLine\":\"cd ${current.project.path} && yarn --cache-folder=\\\".app-yarn-cache\\\" install && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
+          "{\"commandLine\":\"cd ${current.project.path} && yarn --cache-folder=\\\".tests-yarn-cache\\\" install && yarn run majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
         ]
       },
       "type": "blank",
