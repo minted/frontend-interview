@@ -14,6 +14,11 @@
                 "port": "3000",
                 "properties": {},
                 "protocol": "http"
+              },
+              "tests": {
+                "port": "3005",
+                "properties": {},
+                "protocol": "http"
               }
             },
             "agents": [
@@ -39,7 +44,8 @@
           "master"
         ],
         "commands": [
-          "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"start\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
+          "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
+          "{\"commandLine\":\"cd ${current.project.path} && yarn install && yarn run majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
         ]
       },
       "type": "blank",
@@ -67,14 +73,19 @@
     "onProjectsLoaded": {
       "actions": [{
         "properties": {
-          "name": "start"
+          "name": "tests"
+        },
+        "id": "runCommand"
+      }, {
+        "properties": {
+          "name": "app"
         },
         "id": "runCommand"
       }]
     },
     "onAppLoaded": {
       "actions": [{
-          "properties": {
+        "properties": {
           "greetingTitle": "Welcome!",
           "greetingContentUrl": "https://minted.github.io/interview-playground/welcome"
         },
