@@ -44,8 +44,8 @@
           "master"
         ],
         "commands": [
-          "{\"commandLine\":\"yarn install && touch .installed && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
-          "{\"commandLine\":\"while [ ! -f .installed ]; do sleep 1; done && yarn majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
+          "{\"commandLine\":\"cd /projects/interview-playground && yarn install && touch .installed && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
+          "{\"commandLine\":\"cd /projects/interview-playground && while [ ! -f .installed ]; do sleep 1; done && yarn majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
         ]
       },
       "type": "blank",
