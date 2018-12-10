@@ -1,0 +1,13 @@
+* TODO Customer reports that the email field is still editable while message is sending
+
+* TODO Customer reports they filled out the form on the train and it said "Message sent" but the message never went through
+
+To repro, hit send, and immediately disconnect WiFi. Still says "Message sent."
+
+* TODO Customer reports they filled out the form completely, but all of the fields came through as "undefined"
+
+* TODO Customer reports that the page breaks when they submit with an invalid email address
+
+* TODO Customer reports that the form flagged an email address with a dot in the name as invalid
+
+* TODO Customer says the page breaks when using the "Clear" button
