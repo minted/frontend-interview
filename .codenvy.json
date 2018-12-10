@@ -44,8 +44,7 @@
           "master"
         ],
         "commands": [
-          "{\"commandLine\":\"cd /projects/interview-playground && yarn install && touch .installed && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
-          "{\"commandLine\":\"cd /projects/interview-playground && while [ ! -f .installed ]; do sleep 1; done && yarn test\", \"name\":\"tests\", \"attributes\":{\"goal\":\"Test\"}, \"type\":\"custom\"}"
+          "{\"commandLine\":\"cd /projects/interview-playground && yarn install && touch .installed && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
         ]
       },
       "type": "blank",
@@ -72,11 +71,6 @@
   "ide": {
     "onProjectsLoaded": {
       "actions": [{
-        "properties": {
-          "name": "tests"
-        },
-        "id": "runCommand"
-      }, {
         "properties": {
           "name": "app"
         },
