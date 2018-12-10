@@ -44,8 +44,8 @@
           "master"
         ],
         "commands": [
-          "{\"commandLine\":\"cd /projects/interview-playground && yarn --cache-folder=\\\".app-yarn-cache\\\" install && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
-          "{\"commandLine\":\"cd /projects/interview-playground && yarn --cache-folder=\\\".tests-yarn-cache\\\" install && yarn run majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
+          "{\"commandLine\":\"yarn install && touch .installed && yarn start\", \"name\":\"app\", \"attributes\":{\"previewUrl\":\"http://${server.port.3000}\", \"goal\":\"Run\"}, \"type\":\"custom\"}",
+          "{\"commandLine\":\"while [ ! -f .installed ]; do sleep 1; done && yarn majestic\", \"name\":\"tests\", \"attributes\":{\"previewUrl\":\"http://${server.port.3005}\", \"goal\":\"Test\"}, \"type\":\"custom\"}"
         ]
       },
       "type": "blank",
@@ -73,12 +73,12 @@
     "onProjectsLoaded": {
       "actions": [{
         "properties": {
-          "name": "tests"
+          "name": "app"
         },
         "id": "runCommand"
       }, {
         "properties": {
-          "name": "app"
+          "name": "tests"
         },
         "id": "runCommand"
       }]
