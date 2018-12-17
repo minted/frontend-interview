@@ -8,6 +8,6 @@ To repro, hit send, and immediately disconnect WiFi. Still says "Message sent."
 
 * TODO Customer reports that the page breaks when they submit with an invalid email address
 
-* TODO Customer reports that the form flagged an email address with a dot in the name as invalid
-
 * TODO Customer says the page breaks when using the "Clear" button
+
+* TODO Customer reports that the form flagged an email address with a dot in the name as invalid
